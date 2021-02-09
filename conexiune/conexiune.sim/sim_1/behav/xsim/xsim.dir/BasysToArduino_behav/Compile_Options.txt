@@ -1,0 +1,1 @@
+-wto "2ff3be7836ad455f86a2a3f56073b0cb" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "BasysToArduino_behav" "xil_defaultlib.BasysToArduino" -log "elaborate.log" 

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Nov  7 10:30:22 2020
+# Process ID: 17496
+# Current directory: C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.runs/impl_1
+# Command line: vivado.exe -log top_design.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_design.tcl -notrace
+# Log file: C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.runs/impl_1/top_design.vdi
+# Journal file: C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_design.tcl -notrace

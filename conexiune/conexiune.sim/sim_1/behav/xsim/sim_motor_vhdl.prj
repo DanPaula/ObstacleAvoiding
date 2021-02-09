@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../conexiune.srcs/sources_1/new/BasysToArduino.vhd" \
+"../../../../conexiune.srcs/sim_1/new/sim_motor.vhd" \
+
+# Do not sort compile order
+nosort

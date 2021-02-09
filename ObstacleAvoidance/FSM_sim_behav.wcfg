@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="FSM_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="FSM_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="427845fs"></ZoomStartTime>
+      <ZoomEndTime time="502146fs"></ZoomEndTime>
+      <Cursor1Time time="70000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="169"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/FSM_sim/sw" type="logic">
+      <obj_property name="ElementShortName">sw</obj_property>
+      <obj_property name="ObjectShortName">sw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/obstacle6" type="logic">
+      <obj_property name="ElementShortName">obstacle6</obj_property>
+      <obj_property name="ObjectShortName">obstacle6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/direction" type="array">
+      <obj_property name="ElementShortName">direction[1:0]</obj_property>
+      <obj_property name="ObjectShortName">direction[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/motorData" type="array">
+      <obj_property name="ElementShortName">motorData[3:0]</obj_property>
+      <obj_property name="ObjectShortName">motorData[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/test" type="logic">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/waitPeriod" type="other">
+      <obj_property name="ElementShortName">waitPeriod</obj_property>
+      <obj_property name="ObjectShortName">waitPeriod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/sim/currentState" type="other">
+      <obj_property name="ElementShortName">currentState</obj_property>
+      <obj_property name="ObjectShortName">currentState</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_sim/sim/nextState" type="other">
+      <obj_property name="ElementShortName">nextState</obj_property>
+      <obj_property name="ObjectShortName">nextState</obj_property>
+   </wvobject>
+</wave_config>

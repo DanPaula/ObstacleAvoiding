@@ -1,0 +1,7 @@
+Running: xsim.dir/BasysToArduino_behav/xsimk.exe -simmode gui -wdb BasysToArduino_behav.wdb -simrunnum 0 -socket 61649
+Design successfully loaded
+Design Loading Memory Usage: 5340 KB (Peak: 5340 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 5924 KB (Peak: 5924 KB)
+Simulation CPU Usage: 15 ms

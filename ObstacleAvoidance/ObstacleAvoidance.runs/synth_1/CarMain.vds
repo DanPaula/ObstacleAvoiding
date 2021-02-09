@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov 29 10:12:31 2020
+# Process ID: 20052
+# Current directory: C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.runs/synth_1
+# Command line: vivado.exe -log CarMain.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CarMain.tcl
+# Log file: C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.runs/synth_1/CarMain.vds
+# Journal file: C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CarMain.tcl -notrace
+Command: synth_design -top CarMain -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14400 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 822.797 ; gain = 234.105
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/SelectDirection.vhd:49]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/CarMain.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'CarMain' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/CarMain.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/ClockDiv.vhd:30]
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/ClockDiv.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (1#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/ClockDiv.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'range_sensors' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/range_sensors.vhd:47]
+INFO: [Synth 8-3491] module 'trigger_generator' declared at 'C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/trigger_generator.vhd:34' bound to instance 'trigger_gen' of component 'trigger_generator' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/range_sensors.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'trigger_generator' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/trigger_generator.vhd:41]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/counter.vhd:35' bound to instance 'trigg' of component 'counter' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/trigger_generator.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/counter.vhd:43]
+	Parameter n bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/counter.vhd:43]
+WARNING: [Synth 8-614] signal 'outputCounter' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/trigger_generator.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'trigger_generator' (3#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/trigger_generator.vhd:41]
+INFO: [Synth 8-3491] module 'distance_calculation' declared at 'C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/distance_calculation.vhd:36' bound to instance 'pulse_Width' of component 'distance_calculation' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/range_sensors.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'distance_calculation' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/distance_calculation.vhd:45]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/counter.vhd:35' bound to instance 'counterPulse' of component 'counter' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/distance_calculation.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/counter.vhd:43]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (3#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/counter.vhd:43]
+WARNING: [Synth 8-614] signal 'pulse_width' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/distance_calculation.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'distance_calculation' (4#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/distance_calculation.vhd:45]
+INFO: [Synth 8-3491] module 'bcd_converter' declared at 'C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/bcd_converter.vhd:35' bound to instance 'BCDConv' of component 'bcd_converter' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/range_sensors.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'bcd_converter' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/bcd_converter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'bcd_converter' (5#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/bcd_converter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'range_sensors' (6#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/range_sensors.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'SelectDirection' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/SelectDirection.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'SelectDirection' (7#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/SelectDirection.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Rom' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/Rom.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Rom' (8#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/Rom.vhd:44]
+WARNING: [Synth 8-614] signal 'currentState' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:99]
+WARNING: [Synth 8-614] signal 'sw' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:99]
+WARNING: [Synth 8-614] signal 'direction' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:99]
+WARNING: [Synth 8-614] signal 'obstacle6' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:99]
+WARNING: [Synth 8-3848] Net count in module/entity FSM does not have driver. [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (9#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'BasysToArduino' [C:/Users/paula/Desktop/SEM1/SSC/proiect/conexiune/conexiune.srcs/sources_1/new/BasysToArduino.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'BasysToArduino' (10#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/conexiune/conexiune.srcs/sources_1/new/BasysToArduino.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'Display_ctr' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/Display_ctr.vhd:42]
+WARNING: [Synth 8-614] signal 'nr' is read in the process but is not in the sensitivity list [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/Display_ctr.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Display_ctr' (11#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/Display_ctr.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'CarMain' (12#1) [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/CarMain.vhd:61]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[15]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[14]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[13]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[12]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[11]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[10]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[9]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[8]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[7]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[6]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[5]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[4]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[3]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[2]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[1]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[0]
+WARNING: [Synth 8-3331] design CarMain has unconnected port led[14]
+WARNING: [Synth 8-3331] design CarMain has unconnected port led[13]
+WARNING: [Synth 8-3331] design CarMain has unconnected port led[12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 892.516 ; gain = 303.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 892.516 ; gain = 303.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 892.516 ; gain = 303.824
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 892.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: out0). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc:122]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: out1). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc:126]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: out2). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc:130]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: out3). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc:134]
+WARNING: [Vivado 12-507] No nets matched 'go'. [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CarMain_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CarMain_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 998.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 998.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 998.156 ; gain = 409.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 998.156 ; gain = 409.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 998.156 ; gain = 409.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "Rom_array" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'distance_reg' [C:/Users/paula/Desktop/SEM1/SSC/proiect/senzori/senzori.srcs/sources_1/new/distance_calculation.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextState_reg' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextState_reg' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:103]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    stop |                        000000001 |                             0000
+                   start |                        000000010 |                             0001
+         selectdirection |                        000000100 |                             0010
+                 forword |                        000001000 |                             0011
+          continueaction |                        000010000 |                             1000
+              decelerate |                        000100000 |                             0111
+                   right |                        001000000 |                             0100
+                    left |                        010000000 |                             0101
+                    back |                        100000000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextState_reg' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.srcs/sources_1/new/FSM.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 998.156 ; gain = 409.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 30    
+	   3 Input      4 Bit       Adders := 9     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	  22 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 18    
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clock_Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module distance_calculation 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module bcd_converter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 10    
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+Module SelectDirection 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+Module Rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  22 Input      9 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module Display_ctr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design FSM has unconnected port count[15]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[14]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[13]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[12]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[11]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[10]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[9]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[8]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[7]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[6]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[5]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[4]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[3]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[2]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[1]
+WARNING: [Synth 8-3331] design FSM has unconnected port count[0]
+WARNING: [Synth 8-3331] design CarMain has unconnected port led[14]
+WARNING: [Synth 8-3331] design CarMain has unconnected port led[13]
+WARNING: [Synth 8-3331] design CarMain has unconnected port led[12]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 998.156 ; gain = 409.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 998.156 ; gain = 409.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1006.730 ; gain = 418.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1026.008 ; gain = 437.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    72|
+|3     |LUT1   |    23|
+|4     |LUT2   |   117|
+|5     |LUT3   |     8|
+|6     |LUT4   |    26|
+|7     |LUT5   |    75|
+|8     |LUT6   |   113|
+|9     |FDCE   |   138|
+|10    |FDRE   |    57|
+|11    |FDSE   |     1|
+|12    |LD     |    44|
+|13    |IBUF   |    10|
+|14    |OBUF   |    32|
+|15    |OBUFT  |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+--------------------------+------+
+|      |Instance           |Module                    |Cells |
++------+-------------------+--------------------------+------+
+|1     |top                |                          |   723|
+|2     |  Disp             |Display_ctr               |    37|
+|3     |  FSM              |FSM                       |    52|
+|4     |  div              |Clock_Divider             |    82|
+|5     |  rangDreapta      |range_sensors             |   165|
+|6     |    pulse_Width    |distance_calculation_6    |   119|
+|7     |      counterPulse |counter__parameterized1_9 |    52|
+|8     |    trigger_gen    |trigger_generator_7       |    46|
+|9     |      trigg        |counter_8                 |    46|
+|10    |  rangFata         |range_sensors_0           |   167|
+|11    |    pulse_Width    |distance_calculation_2    |   121|
+|12    |      counterPulse |counter__parameterized1_5 |    52|
+|13    |    trigger_gen    |trigger_generator_3       |    46|
+|14    |      trigg        |counter_4                 |    46|
+|15    |  rangStanga       |range_sensors_1           |   161|
+|16    |    pulse_Width    |distance_calculation      |   115|
+|17    |      counterPulse |counter__parameterized1   |    52|
+|18    |    trigger_gen    |trigger_generator         |    46|
+|19    |      trigg        |counter                   |    46|
+|20    |  selectDir        |SelectDirection           |     6|
++------+-------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 1041.816 ; gain = 347.484
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1041.816 ; gain = 453.125
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1053.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 116 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 27 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1053.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  LD => LDCE: 17 instances
+  LD => LDCE (inverted pins: G): 27 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 59 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1053.883 ; gain = 752.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1053.883 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paula/Desktop/SEM1/SSC/proiect/Obstacle/ObstacleAvoidance/ObstacleAvoidance.runs/synth_1/CarMain.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CarMain_utilization_synth.rpt -pb CarMain_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 29 10:13:53 2020...
